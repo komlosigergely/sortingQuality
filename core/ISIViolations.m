@@ -43,7 +43,7 @@ D = max(spikeTrain); % duration of recording
 isis = diff(spikeTrain);
 numViolations = sum(isis <= refDur & isis>minISI); % number of observed violations
 
-fpRate =  1 - sqrt(1 - numViolations*D/(Nt^2*(refDur-minISI)));
+fpRate =  1 - sqrt(1 - numViolations*D/(Nt^2*(refDur-minISI))); % This is equivalent to Llobet 2022 Lussac paper except D is not corrected to minISI here.
 
 end
 
