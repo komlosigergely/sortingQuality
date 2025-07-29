@@ -36,7 +36,7 @@ function [fpRate, numViolations] = ISIViolations(spikeTrain, minISI, refDur)
 %
 % Bonus: the correct expression no longer returns imaginary values!
 
-warning('sortingQuality:ISIViolations -- The behavior of this function has changed!! as of 2023-09-05. The fix should make only minor changes to the results. Please see function comments for details.')
+%warning('sortingQuality:ISIViolations -- The behavior of this function has changed!! as of 2023-09-05. The fix should make only minor changes to the results. Please see function comments for details.')
 
 Nt = length(spikeTrain); % total spike count
 D = max(spikeTrain); % duration of recording
